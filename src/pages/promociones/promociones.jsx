@@ -1,10 +1,23 @@
 import React from 'react';
+import { styled, Container } from '@mui/material';
+import ServiceCard from '../../components/pure/ServiceCard';
+import { promociones } from '../../AppData/Promociones';
+
+const CustomContainer = styled(Container)`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 32px;
+  padding: 32px;
+`
 
 const Promociones = () => {
   return (
-    <div>
-      <h1>Promociones!</h1>
-    </div>
+    <CustomContainer>
+      {
+        promociones.map((service, index)=><ServiceCard key={index} service={service} size={'large'}/>)
+      }
+    </CustomContainer>
   );
 }
 
