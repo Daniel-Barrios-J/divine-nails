@@ -1,13 +1,18 @@
+//hooks, router
 import { useState } from "react"
-import styled from "styled-components"
-import { menuItems } from "../../utils/menuItems"
 import { useNavigate } from "react-router-dom"
+
+//libs
+import styled from "styled-components"
+
+//utils
+import { menuItems } from "../../utils/menuItems"
 
 //styled-componets
 const HeaderContainer = styled.nav`
   width: 100%;
   height: 100%;
-  background-color: white;
+  background-color: #292828;
   display: flex;
   justify-content: space-between;
   .logo-container {
@@ -15,9 +20,11 @@ const HeaderContainer = styled.nav`
     display: flex;
     align-items: center;
     height: 100%;
-    padding-left: 40px;
+    padding: 12px 40px;
     img {
+      cursor: pointer;
       height: 100%;
+      border-radius: 50%;
     }
   }
   .menu-items-container {
@@ -47,14 +54,14 @@ const HeaderContainer = styled.nav`
       }
     }
     .menu-items-container {
-      background-color: aliceblue;
+      background-color: #292828;
       padding: 16px;
       width: 40vw;
       height: 92vh;
       position: absolute;
       left: 0;
       transform: translateX(-100%);
-      top: 8vh;
+      top: 10vh;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -69,19 +76,19 @@ const HeaderContainer = styled.nav`
 const MenuItem = styled.button`
   height: 60%;
   width: 100px;
-  color: #2c2c2c;
+  color: #f0e6e6;
   background-color: transparent;
   border-radius: 6px;
   outline: none;
   border: none;
-  border-bottom: solid 1px #374242;
+  border-bottom: solid 1px #86a8a8;
   cursor: pointer;
   @media all and (max-width: 640px) {
     height: 40px;
   }
 `
 
-
+//component
 export default function Header() {
 
   const [menuMobile, setMenuMobile] = useState(false);
@@ -106,7 +113,7 @@ export default function Header() {
         }
       </div>
       <div className="menu-mobile-logo-container" onClick={()=>setMenuMobile(!menuMobile)}>
-        <img alt="menu-icon" src="https://img.icons8.com/external-flatart-icons-solid-flatarticons/64/null/external-menu-ux-and-ui-flatart-icons-solid-flatarticons.png"/>
+        <img alt="menu-icon" src="https://img.icons8.com/stickers/100/null/xbox-menu.png"/>
       </div>
     </HeaderContainer>
   )

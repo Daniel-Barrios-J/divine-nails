@@ -14,12 +14,12 @@ import HomePage from "./pages/home/HomePage";
 
 //styled-components
 const AppContainer = styled.div`
-  background-color: #6C9BCF;
+  background-color: #bed6f1;
   width: 100vw;
   min-height: 100vh;
   .header {
     width: 100%;
-    height: 8vh;
+    height: 10vh;
   }
   .page {
     width: 100%;
