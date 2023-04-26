@@ -50,7 +50,7 @@ const HeaderContainer = styled.nav`
       align-items: center;
       padding-left: 20px;
       img {
-        height: 70%;
+        height: 60%;
       }
     }
     .menu-items-container {
@@ -61,7 +61,7 @@ const HeaderContainer = styled.nav`
       position: absolute;
       left: 0;
       transform: translateX(-100%);
-      top: 10vh;
+      top: 8vh;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;

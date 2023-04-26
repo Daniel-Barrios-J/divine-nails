@@ -19,7 +19,7 @@ const AppContainer = styled.div`
   min-height: 100vh;
   .header {
     width: 100%;
-    height: 10vh;
+    height: 8vh;
   }
   .page {
     width: 100%;
