@@ -38,12 +38,12 @@ const ServiceContainer = styled.div`
 `
 
 export default function ServiceComponent(service) {
-  const {name, description, price, img} = service;
+  const {nameService, description, price, imgUrl} = service;
   return (
     <ServiceContainer>
       <div className="service">
-        <h2>{name}</h2>
-        <img src={img} alt="img-service" />
+        <h2>{nameService}</h2>
+        <img src={imgUrl} alt="img-service" />
       </div>
       <div className="description">
         {description}

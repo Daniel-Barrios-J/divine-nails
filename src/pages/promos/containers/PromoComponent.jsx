@@ -38,12 +38,12 @@ const PromoContainer = styled.div`
 `
 
 export default function PromoComponent(promo) {
-  const {name, description, price, img, day} = promo;
+  const {namePromo, description, price, imgUrl, day} = promo;
   return (
     <PromoContainer>
       <div className="promo">
-        <h2>{name}</h2>
-        <img src={img} alt="img-promo" />
+        <h2>{namePromo}</h2>
+        <img src={imgUrl} alt="img-promo" />
       </div>
       <div className="description">
         {description}
