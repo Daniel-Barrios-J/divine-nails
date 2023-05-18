@@ -9,12 +9,12 @@ import ServicesPage from "./pages/services/ServicesPage";
 import SucursalPage from "./pages/sucursal/SucursalPage";
 import PromosPage from "./pages/promos/PromosPage";
 import NotFoundPage from "./pages/404/NotFoundPage";
-import Header from "./components/container/Header";
+import Header from "./components/containers/Header";
 import HomePage from "./pages/home/HomePage";
 
 //styled-components
 const AppContainer = styled.div`
-  background-color: #bed6f1;
+  background-color: azure;
   width: 100vw;
   min-height: 100vh;
   .header {
